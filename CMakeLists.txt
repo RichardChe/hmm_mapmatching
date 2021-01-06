@@ -17,3 +17,5 @@ add_library(libInMemMap SHARED ${INMEM_MAP_LIST_CPP})
 add_executable(test_graph ${PROJECT_SOURCE_DIR}/src/example_graph.cpp)
 target_link_libraries(test_graph libInMemMap)
 
+add_executable(test_matching ${PROJECT_SOURCE_DIR}/src/example_simple_match.cpp)
+target_link_libraries(test_matching libInMemMap)
